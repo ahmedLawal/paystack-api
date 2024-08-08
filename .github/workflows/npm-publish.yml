@@ -64,5 +64,5 @@ jobs:
           server: ftps9.uk.cloudlogin.co
           username: herlhay_serene-dev.xyz
           password: ${{ secrets.ftp_password }}
-          local-dir: ./dist/_release/
+          local-dir: ./_release/
           server-dir: ./paystack/

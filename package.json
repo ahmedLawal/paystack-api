@@ -1,15 +1,16 @@
 {
   "name": "@serene-dev/paystack",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A NodeJS wrapper for the Paystack Rest API",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watchAll",
     "build": "tsc",
+    "post-build": "cp package.json readme.md ./dist",
     "build-watch": "tsc --watch",
     "compodoc": "compodoc -p tsconfig.lib.doc.json -d ./documentations/paystack/1.0.0  --disableSourceCode --disableTemplateTab --disableStyleTab --disableProtected --disablePrivate --disableDomTree --disableLifeCycleHooks --theme=material",
-    "deploy": "npm run build && cd ./dist && npm publish --access=public"
+    "deploy": "npm run build && npm run post-build && cd ./dist && npm publish --access=public"
   },
   "private": false,
   "keywords": [

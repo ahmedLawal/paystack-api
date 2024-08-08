@@ -4,8 +4,8 @@
 name: Node.js Package
 
 on:
-  push:
-    branches: [main]
+  # push:
+    # branches: [main]
   release:
     types: [created]
 
@@ -65,4 +65,4 @@ jobs:
           username: herlhay_serene-dev.xyz
           password: ${{ secrets.ftp_password }}
           local-dir: ./_release/
-          server-dir: ./paystack/
+          server-dir: ./

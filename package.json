@@ -1,6 +1,6 @@
 {
   "name": "@serene-dev/paystack",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A NodeJS wrapper for the Paystack Rest API",
   "main": "index.js",
   "scripts": {

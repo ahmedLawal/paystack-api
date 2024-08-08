@@ -3,3 +3,4 @@ src/.DS_Store
 documentations
 documentations/.DS_Store
 node_modules
+dist

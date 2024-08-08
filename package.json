@@ -1,0 +1,38 @@
+{
+  "name": "@serene-dev/paystack",
+  "version": "1.0.0",
+  "description": "A NodeJS wrapper for the Paystack Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watchAll",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "compodoc": "compodoc -p tsconfig.lib.doc.json -d ./documentations/paystack/1.0.0  --disableSourceCode --disableTemplateTab --disableStyleTab --disableProtected --disablePrivate --disableDomTree --disableLifeCycleHooks --theme=material",
+    "deploy": "npm run build && cd ./dist && npm publish --access=public"
+  },
+  "private": false,
+  "keywords": [
+    "paystack",
+    "paystack ts"
+  ],
+  "author": {
+    "email": "ahmeddapo0110@gmail.com",
+    "name": "Ahmed Lawal",
+    "url": "https://serene-dev.xyz/portfolio"
+  },
+  "homepage": "https://serene-dev.xyz/documentations/paystack",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.3"
+  },
+  "devDependencies": {
+    "@compodoc/compodoc": "^1.1.25",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
